@@ -13,6 +13,9 @@ app.get("/login",(req,res,next)=>{
     a=req.query.message
     next();
 })
+app.get("/login",(req,res)=>{
+    res.send()
+}
 
 app.get("/message",(req,res)=>{
    res.set("content-type","text/html");
